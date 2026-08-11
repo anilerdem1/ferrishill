@@ -112,8 +112,14 @@ body {
   font-size: clamp(0.95rem, 2vw, 1.1rem);
   letter-spacing: 0.01em;
   color: var(--muted);
-  max-width: 34rem;
+  max-width: 36rem;
   line-height: 1.6;
+}
+.lede-lead {
+  display: block;
+  color: var(--ink);
+  font-weight: 400;
+  margin-bottom: 0.55rem;
 }
 
 .contact {
