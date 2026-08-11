@@ -42,10 +42,10 @@ body {
     radial-gradient(120% 90% at 50% 0%, rgba(var(--scrim-color), 0.15), transparent 55%),
     linear-gradient(
       to top,
-      rgba(var(--scrim-color), 0.92) 0%,
-      rgba(var(--scrim-color), 0.55) 32%,
-      rgba(var(--scrim-color), 0.20) 62%,
-      rgba(var(--scrim-color), 0.42) 100%
+      rgba(var(--scrim-color), 0.94) 0%,
+      rgba(var(--scrim-color), 0.70) 42%,
+      rgba(var(--scrim-color), 0.34) 72%,
+      rgba(var(--scrim-color), 0.45) 100%
     );
 }
 
@@ -64,6 +64,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: clamp(1.5rem, 4vw, 3.5rem);
+  padding-bottom: clamp(2rem, 4.5vw, 4rem);
+  text-shadow: 0 1px 30px rgba(0, 0, 0, 0.35);
 }
 
 .label {
