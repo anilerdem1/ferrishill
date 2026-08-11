@@ -129,6 +129,21 @@ body {
 }
 .contact:hover { border-color: var(--accent); color: #fff; }
 
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem 0.95rem;
+  margin-top: clamp(1.6rem, 3.5vw, 2.4rem);
+}
+.values span {
+  font-size: clamp(0.56rem, 1.3vw, 0.66rem);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--muted);
+}
+.values i { color: var(--accent); font-style: normal; opacity: 0.7; }
+
 .foot { margin-top: clamp(2rem, 5vw, 3.5rem); color: rgba(169, 182, 196, 0.6); }
 
 /* ---- entrance animation ---- */
@@ -138,6 +153,7 @@ body {
 .d3 { animation-delay: 0.48s; }
 .d4 { animation-delay: 0.64s; }
 .d5 { animation-delay: 0.80s; }
+.d6 { animation-delay: 0.96s; }
 .topbar .reveal { animation-delay: 0.05s; }
 
 @keyframes rise { to { opacity: 1; transform: translateY(0); } }
