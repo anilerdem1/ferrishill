@@ -29,6 +29,36 @@ body {
   pointer-events: none;
 }
 
+.bg-rotator {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1) contrast(1.05);
+  opacity: 0;
+  animation: slideshow 24s var(--ease) infinite;
+}
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 8s; }
+.slide:nth-child(3) { animation-delay: 16s; }
+@keyframes slideshow {
+  0%   { opacity: 0; transform: scale(1.06); }
+  4%   { opacity: 1; }
+  29%  { opacity: 1; }
+  37%  { opacity: 0; transform: scale(1.09); }
+  100% { opacity: 0; transform: scale(1.06); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .slide { animation: none; opacity: 0; }
+  .slide:first-child { opacity: 1; }
+}
+
 .bg {
   background-image: var(--bg-image);
   background-size: cover;
