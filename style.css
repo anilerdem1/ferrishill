@@ -33,6 +33,7 @@ body {
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
+  filter: grayscale(1) contrast(1.05);
   transform: scale(1.06);
   animation: kenburns 32s var(--ease) forwards;
 }
