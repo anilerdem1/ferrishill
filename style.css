@@ -1,5 +1,5 @@
-/* Ferris Hill Capital Partners — coming soon
-   Fraunces (editorial serif) + Space Grotesk (grotesque) */
+/* Ferris Hill Capital Partners, coming soon
+   Source Serif 4 (wordmark serif) + Inter (labels and text) */
 
 :root {
   --ink: #eef2f6;
@@ -15,7 +15,8 @@ html, body { height: 100%; }
 body {
   color: var(--ink);
   background: #060b12;
-  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-optical-sizing: auto;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -102,8 +103,8 @@ body {
 .label {
   font-size: clamp(0.62rem, 1.4vw, 0.72rem);
   text-transform: uppercase;
-  letter-spacing: 0.32em;
-  font-weight: 400;
+  letter-spacing: 0.22em;
+  font-weight: 500;
   color: var(--muted);
 }
 
@@ -122,15 +123,15 @@ body {
 }
 
 .title {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: "Source Serif 4", Georgia, serif;
   font-optical-sizing: auto;
-  font-weight: 360;
-  font-size: clamp(2.7rem, 9.5vw, 6.4rem);
-  line-height: 0.98;
-  letter-spacing: -0.015em;
+  font-weight: 560;
+  font-size: clamp(2.7rem, 9.5vw, 6.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
   color: #f6f8fb;
 }
-.title .thin { font-weight: 300; font-style: italic; color: var(--ink); }
+.title .thin { font-weight: 400; color: var(--ink); }
 
 .rule {
   width: 64px;
@@ -141,9 +142,9 @@ body {
 }
 
 .lede {
-  font-weight: 300;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  letter-spacing: 0.01em;
+  font-weight: 400;
+  font-size: clamp(0.95rem, 2vw, 1.06rem);
+  letter-spacing: 0;
   color: var(--muted);
   max-width: 36rem;
   line-height: 1.6;
@@ -151,7 +152,7 @@ body {
 .lede-lead {
   display: block;
   color: var(--ink);
-  font-weight: 400;
+  font-weight: 480;
   margin-bottom: 0.55rem;
 }
 
@@ -161,7 +162,7 @@ body {
   color: var(--ink);
   text-decoration: none;
   font-size: 0.95rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   border-bottom: 1px solid rgba(203, 184, 145, 0.5);
   padding-bottom: 2px;
   transition: border-color 0.25s var(--ease), color 0.25s var(--ease);
@@ -178,7 +179,7 @@ body {
 .values span {
   font-size: clamp(0.56rem, 1.3vw, 0.66rem);
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.22em;
   color: var(--muted);
 }
 .values i { color: var(--accent); font-style: normal; opacity: 0.7; }
