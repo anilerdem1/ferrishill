@@ -1,4 +1,4 @@
-/* Ferris Hill Capital Partners — coming soon
+/* FerrisHill — coming soon
    Fraunces (editorial serif) + Space Grotesk (grotesque) */
 
 :root {
@@ -83,6 +83,11 @@ body {
 }
 .topbar .mark { color: var(--ink); }
 
+/* The name carries a medial capital. The uppercase label treatment flattens it
+   to FERRISHILL, so the wordmark and the copyright keep their true case. */
+.topbar .mark,
+.foot { text-transform: none; letter-spacing: 0.06em; }
+
 .hero { margin-top: auto; max-width: 60rem; }
 
 .eyebrow {
@@ -99,7 +104,6 @@ body {
   letter-spacing: -0.015em;
   color: #f6f8fb;
 }
-.title .thin { font-weight: 300; font-style: italic; color: var(--ink); }
 
 .rule {
   width: 64px;
