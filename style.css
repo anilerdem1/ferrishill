@@ -83,11 +83,6 @@ body {
 }
 .topbar .mark { color: var(--ink); }
 
-/* The name carries a medial capital. The uppercase label treatment flattens it
-   to FERRISHILL, so the wordmark and the copyright keep their true case. */
-.topbar .mark,
-.foot { text-transform: none; letter-spacing: 0.06em; }
-
 .hero { margin-top: auto; max-width: 60rem; }
 
 .eyebrow {
